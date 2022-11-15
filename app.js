@@ -23,7 +23,13 @@ function createCard(data) {
   img.src = image;
   img.alt = image;
   quoteCharacter.textContent = quote;
-  button.textContent = 'Generate'
+  button.textContent = "Generate";
+
+  card.classList.add("card");
+  title.classList.add("title");
+  img.classList.add("img");
+  quoteCharacter.classList.add("quoteCharacter");
+  button.classList.add("button");
 
   main.appendChild(card);
   card.appendChild(title);
